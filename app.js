@@ -21,11 +21,10 @@ app.get('/', (req, res)=>{
 });
 
 
-app.get('/api/users', (req, res)=>{
-    res.status(200).send("Hello world...");
+app.get('/api/users/user/:id', (req, res)=>{
+	const userId = re.params.id;
+    res.status(200).send(`User with ${userId} has been found!`);
 });
-
-app
         
 
 
